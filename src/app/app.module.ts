@@ -7,11 +7,13 @@ import { HttpServiceService } from './services/http.service.service';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
