@@ -12,7 +12,14 @@ declare var $:any;
 
 export class NavBarComponent {
 
-  openCloseNavbar(){
+  showProjectsSubMenu: boolean = false;
+
+  openCloseNavbar(button: any){
+    this.toggleProjectsSubMenu(button);
     $('.navbar-collapse').removeClass('show');
+  }
+
+  toggleProjectsSubMenu(button: any){
+    this.showProjectsSubMenu = button.target.text.toLowerCase() === "projects";
   }
 }
