@@ -1,0 +1,70 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+  <div class="my-auto">
+    <h2 class="mb-5">Projects</h2>
+    <div id="project-traveler">
+      <div class="subheading mb-3">The Traveler of Mundor</div>
+      <p>The Traveler of Mundor is a Top-Down 2D RPG developed soley by me. It has been my passion project for the last 4 years. But it's roots much run deep than that.</p>
+      <p>
+        It started out as a text based RPG game that I developed in 2015 as my first tutorial into C#. I had taken the college class on C# but promptly forgot everything after the class ended.
+        So when I started my first internship at CIC, I had to learn C# quick. Following <a href="https://scottlilly.com/learn-c-by-building-a-simple-rpg-index/">Scott Lilly's Guide to C#</a> I quickly picked it back up and in the end had this neat little RPG game with an inventory, quests, different locations to visit, and even combat!
+        But it just wasnt enough. Over the next year I expanded the game, adding chests, NPC's, unique items with custom functionality, and more locations including 7 dungeons. After I started adding the 8th dungeon, I took a step back from the project and examined it hard.
+        I decided that the project was just in a state of disrepair. The code was messy, it was cumbersome to do things, and honestly the whole game could probably have been beaten in an hour. So what did I do? Started from scratch of course!
+      </p>
+      <p>
+        I created an entirely new project, called it 2.0, and began to rewrite everything. Not only did I rework the code to make it scalable, have a sleeker UI, but I began to implement even more features like multiple save files with a start menu, as well as expanding the content 10 fold.
+        Over the next few years I worked on this version of the game, expanding on the content as I worked through reworking every aspect of the code. I took breaks here and there, but I pretty much put the project on hold when I started my final year of college. Over the next year I spent all of my time working on Virtual Marketplace, my capstone project.
+        While this did put a hold on developing my game, it taught me something else instead. It taught me how to use Unity.
+      </p>
+      <p>
+        A few months after I graduated, I decided to take the knowledge I had learned and use it to turn my game into what I also envisioned it to be. Following this <a href="https://www.youtube.com/playlist?list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu">series of tutorials</a> by MisterTaftCreates,
+        I once again did I what did in 2015. Along the way through the tutorial, I started adding my own content. First it was chests, then NPC's and quests; before I knew it I was developing my game without needing the tutorial anymore. I started creating all the UI's, implementing unique items, and I even rewrote my entire backend engine.
+        Before in both versions 1 and 2, the data for the games objects (NPC's, quests, chest contents, items, equipment, etc...) was all in code. I wanted to break away from that use data files to store the data, and then have an engine that could read any file and output it to a common type that the game could then access easily.
+        I ended up transferring all the game data into XML files and wrote some code that could read any of them and create each node as a custom class I call WorldObject. This WorldObject is essentially an extended Dictionary where the key is a string and the value could be anything; a primitive type, an object/list of objects, or even another WorldObject.
+        In order to manage these files I created another WinForms app call GameDataEditor (see below) that allows me to edit the XML files in a GUI format, without having to sift through them in Notepad++.
+      </p>
+      <p>
+        4 years later and I am still developing this game. I am currently working on implementing the 3<sup>rd</sup> dungeon and hope to have it completed within the next couple months. If you wish to check out the game, I have a version that is ready to be tested, send me an email and I will send you the download link.
+      </p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <img src="../../../assets/img/tom1.jpg" class="project-img" />
+        </li>
+        <li class="list-inline-item">
+          <img src="../../../assets/img/tom2.jpg" class="project-img"/>
+        </li>
+        <li class="list-inline-item">
+          <img src="../../../assets/img/tom3.jpg" class="project-img"/>
+        </li>
+      </ul>
+    </div>
+    <hr/>
+    <div id="project-vm">
+      <div class="subheading mb-3">Virtual Marketplace</div>
+      <p>
+        Virtual Marketplace was my college capstone project. Developed by me, and two others, it was a virtual reality shopping center. The idea was to merge the convenience of online shopping, with the tangibility of an online store. I was the sole software developer on the team so it was a lot of work developing the suite of applications we had for our project.
+        Not only did we have the VR application, which was done in Unity3D with C#, but we also had a website that would track your transactions made within the application, as well as a handful of other applications to make everything run smoothly.
+      </p>
+      <p>
+        More to come!
+      </p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <iframe class="project-img" src="https://www.youtube.com/embed/BAl8v0cUgMQ" allowfullscreen webkitallowfullscreen mozAllowFullScreen></iframe>
+        </li>
+        <li class="list-inline-item">
+          <iframe id="kaltura_player" class="project-img" frameborder="0" title="Kaltura Player"
+                    src="https://cdnapisec.kaltura.com/p/1492301/sp/149230100/embedIframeJs/uiconf_id/22790551/partner_id/1492301?iframeembed=true&playerId=kaltura_player&entry_id=1_apm9ucaa&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_vx468cbo"
+                    allowfullscreen webkitallowfullscreen mozAllowFullScreen>
+            </iframe>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="subheading mb-3"></div>
+    </div>
+    <div id="project-work">
+      <div class="subheading mb-3">Work Projects</div>
+      <p>Coming soon!</p>
+    </div>
+  </div>
+</section>
