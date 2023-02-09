@@ -14,8 +14,7 @@ export class NavBarComponent {
 
   showProjectsSubMenu: boolean = false;
 
-  openCloseNavbar(button: any){
-    this.toggleProjectsSubMenu(button);
+  closeNavbar(){
     $('.navbar-collapse').removeClass('show');
   }
 

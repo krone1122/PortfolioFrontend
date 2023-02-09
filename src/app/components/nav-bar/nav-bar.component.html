@@ -12,38 +12,41 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#about">About</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#experience">Experience</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#education">Education</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#education">Education</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#skills">Skills</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#projects">Projects</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#projects">Projects</a>
         <div *ngIf="showProjectsSubMenu">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a pageScroll class="nav-link project-nav-link" href="#project-traveler">The Traveler of Mundor</a>
+              <a pageScroll class="nav-link project-nav-link" (click)="closeNavbar();" href="#project-traveler">The Traveler of Mundor</a>
             </li>
             <li class="nav-item">
-              <a pageScroll class="nav-link project-nav-link" href="#project-vm">Virtual Marketplace</a>
+              <a pageScroll class="nav-link project-nav-link" (click)="closeNavbar();" href="#project-vm">Virtual Marketplace</a>
             </li>
             <li class="nav-item">
-              <a pageScroll class="nav-link project-nav-link" href="#project-work">Work Projects</a>
+              <a pageScroll class="nav-link project-nav-link" (click)="closeNavbar();" href="#project-work">Work Projects</a>
+            </li>
+            <li class="nav-item">
+              <a pageScroll class="nav-link project-nav-link" (click)="closeNavbar();" href="#project-other">Other Projects</a>
             </li>
           </ul>
         </div>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#interests">Interests</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#interests">Interests</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" (click)="openCloseNavbar($event);" href="#awards">Awards</a>
+        <a pageScroll class="nav-link" (click)="closeNavbar(); toggleProjectsSubMenu($event);" href="#awards">Awards</a>
       </li>
       <!--Commenting out until ready to build functionality for it-->
       <!-- <li class="nav-item">
