@@ -1,0 +1,9 @@
+Run the command ng build --output-path docs --base-href /PortfolioFrontend/
+  This will build the app to the docs folder, and then set the base href correctly.
+
+Once its done, go into main.js and change the assets path for the me.jpg from ../assets/img/me.jpg to /PortfolioFrontend/assets/img/me.jpg.
+  (Will need to figure out how to automate this so I dont have to manually do this every build)
+
+Once complete, commit your changes to the branch and merge them into protected/master. The site is setup and should automatically reflect new changes.
+
+Remember that the DOCS folder is what gets served so its only whats in there, not whats in the branch that matters.
