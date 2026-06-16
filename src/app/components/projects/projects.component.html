@@ -87,6 +87,21 @@
       <p>
         This was the first application I worked on for a client of E Tech Group's. I started out making small development contributions such as adding a "QuickTips" menu and a notification system, but this quickly evolved into more complex tasks such as physics-based product conveyance. I left off with the project as the lead developer, having made many more contributions, one of them being HMI-styled dashboards.
       </p>
+      <div class="subheading mb-3">LLM AutoFactory</div>
+      <p>
+        This was the second Unity based application I worked on at E Tech Group. While I did not start this project, I took it over and was the sole developer on it until it came to completion. The idea was to create an interactive user experience, or game, to showcase our capabilities as an Advanced Software group at tradeshows. The object of the game was simple; you were presented a chess-board like grid with one random position being a starting infeed conveyor, and another random position being the outfeed (in this case a truck).
+        Obstacles were present on the grid and the goal was to place conveyor pieces on the grid to create a continuous route from infeed to outfeed. Once you were satisified with your route, you could "hit play" and watch a group of boxes make its away across the conveyors you placed and into the truck, provided you did the route correctly. If all packages made it to the truck, the doors closed and the truck would drive off.
+        The catch with this game, and what made it technically intriguing, was there were no traditional controls for placing the conveyors. We had no drag and drop feature for placing them and there were no keybinds in place for doing so either. The only way to communicate through the game was through an LLM.
+      </p>
+      <p>
+        In order to showcase some technical prowess, we created a unique way to interact with our game. Users would have to chat with an LLM in order to place conveyors and run tests, or hit play persay. This was done through a pipeline we created involving OpenWeb UI as our frontend/LLM integration layer, and a custom C#, .NET Core, MCP server as our backend.
+        The server was setup with MCP capabilities so the LLM could access various tools for doing game actions, which were then sent to the game through the use of Signal R. So, for example, all a user would do is tell the LLM to "place a conveyor on A5" and the LLM was smart enough to infer which tool to call with the right parameters to send a game action to Unity
+        to place a conveyor on A5. Pretty cool right? It gets even cooler. We found that with the right models (we used GPT 5+), the LLM was smart enough to plan its own routes given the infeed and outeed coordinates. For example you could say "I have an infeed going east from A1 and an outfeed at B8. Plan and place a route of conveyors so that all obstacles are avoided".
+        Due to the tools we had in place, the LLM was able to determine where the obstacles were and how to route around them to create a successful connection.
+      </p>
+      <p>
+        All in all, it was an amazing project to be apart of and to get to hone my Unity skills on.
+      </p>
       <h4>CIC</h4>
       <div class="subheading mb-3">Product Model Set Tool 2.0</div>
       <p>
